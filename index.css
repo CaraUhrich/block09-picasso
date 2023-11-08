@@ -1,0 +1,71 @@
+.art {
+    display: grid;
+    grid-template: repeat(9, 1fr) / repeat(9, 1fr);
+    background-color: goldenrod;
+    width: 90vw;
+    height: 90vh;
+    padding: 5px;
+    border: solid black;
+    margin: 10px;
+}
+
+
+.element1 {
+    background-color: olive;
+    grid-area: 6 / 4 / 7 / 6;
+    position: relative;
+    z-index: 4;
+    clip-path: ellipse();
+    transform: rotate(-5deg);
+}
+
+.element2 {
+    background-color: maroon;
+    grid-area: 8 / 3 / 10 / 8;
+    position: relative;
+    z-index: 3;
+    clip-path: ellipse();
+    transform: rotate(-10deg);
+}
+
+.element3 {
+    background-color: brown;
+    grid-area: 2 / 2 / 5 / 5;
+    position: relative;
+    z-index: 5;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.element4 {
+    background-color: navy;
+    grid-area: 4 / 3 / 6 / 7;
+    position: relative;
+    z-index: 6;
+    clip-path: ellipse();
+    transform: rotate(-65deg);
+}
+
+.element5 {
+    background-color: gold;
+    grid-area: 2 / 6 / 5 / 9;
+    position: relative;
+    z-index: 7;
+    clip-path: circle();
+}
+
+.element6 {
+    background-color: antiquewhite;
+    grid-area: 4 / 6 / 7 / 10;
+    position: relative;
+    z-index: 2;
+    transform: rotate(-25deg);
+    clip-path: polygon(0% 30%, 100% 0%, 80% 100%, 20% 100%, 0% 80%);
+}
+
+.element7 {
+    background-color: chocolate;
+    grid-area: 1 / 1 / 10 / 10;
+    position: relative;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 30% 100%, 50% 100%, 100% 0%);
+}
